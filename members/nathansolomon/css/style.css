@@ -1,8 +1,47 @@
 body {
-	background-color: #000000;
-	color: #ffffff;
+    position: relative;
+    background-color: black;
+    margin: 0;
+    color: lightgreen;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 16px;
 }
 
-img {
-	background-color: #ffffff;
+p {
+    margin: 0;
+}
+
+a:link {
+    color: lightgreen;
+}
+
+a:hover {
+    color: lightgreen;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:active {
+    color: yellowgreen;
+}
+
+input[type=text] {
+    background-color: black;
+    color: lightgreen;
+    border: none;
+    font-family: 'Ubuntu Mono', monospace;
+    margin: 0;
+    padding: 0;
+    width: 10px;
+    font-size: 16px;
+}
+
+input[type=text]:focus {
+    border: 1px solid black;
+}
+
+.testBlock {
+    
 }

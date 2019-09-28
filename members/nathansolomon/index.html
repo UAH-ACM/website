@@ -1,16 +1,42 @@
-<html>
-	<head>
-		<title>UAH ACM | Nathan Solomon</title>
-		
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<p><a href="https://uah.acm.org">Want to leave? Click here!</a></p>
-		<div align="center">
-			<h1>Welcome to my super basic introductory site!</h1>
-			<p>Have a fun picture of the number 3<p>
-			<img src="images/003.png" alt="003"></img>
-		</div>
-	<p>hi again</p>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                    <link rel="stylesheet" href="css/style.css">
+                    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+                        <title>Nathan Solomon</title>
+    </head>
+    <body>
+        <div class="header">
+            <p>Welcome to NathanOS [Version 0.0.1]</p>
+            <p>(c) 2019 Nathan Solomon. All rights reserved.</p>
+            <p>&nbsp;</p>
+            <p>This site has been created as part of the UAH One Month Project. If you would like to return to the UAH ACM home page, click this link here:</p>
+            <p><a href="https://uah.acm.org/index.html">https://uah.acm.org/</a></p>
+            <p>&nbsp;</p>
+            <form onsubmit="processCMD()" action="#">
+                C://users/nathansolomon/
+                <input id="cmdInput" type="text" name="cmdline" class="inputLine" autofocus="autofocus" oninput="adjustSize()">
+            </form>
+            <div id="testBlock" class="testBlock">
+                <p>This code only shows up on form submission</p>
+            </div>
+        </div>
+        
+        <script>
+            function adjustSize() {
+                var text = document.getElementById("cmdInput").value;
+                var length = (text.length * 8) + 8;
+                document.getElementById("cmdInput").style.width = length.toString() + "px";
+            }
+        </script>
+        <script>
+            function processCMD() {
+                document.getElemendById("testBlock").style.color = red;
+            }
+        </script>
+    </body>
 </html>
+
