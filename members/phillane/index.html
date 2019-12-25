@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+STYLING CREDIT TO: Harry Delugach's personal website
+http://www.cs.uah.edu/~delugach/
+
+I am neither creative enough nor well-versed enough in CSS to create a webpage that looks remotely good. I just write the JavaScript for the front-end, HTML/CSS is black magic that my coworkers handle.
+-->
+<html>
+	<head>
+		<title>Phil Lane</title>
+		<link rel="stylesheet" href="philsite.css">
+		<script src="pbrain.js"></script>
+	</head>
+	<body class="twoColFixLtHdr">
+		<div id="borderLogo" align="right" style="float: right; background-color: #0081c6;"></div>
+		<div id="container">
+			<div id="header">
+				<h2>
+					Phil Lane<br />
+					<span class="style1">Undergraduate Computer Science and Philosophy Researcher</span>
+				</h2>
+				<hr>
+				<div id="navbar" align="center" style="font: 10pt Arial">
+					<a href="http://uah.acm.org">Back to Home</a><br />
+					&nbsp;
+				</div>
+			</div>
+			<div id="mainContent">
+				<h1 align="left">About Me</h1>
+				<h2 align="left">Computer Science</h2>
+				<font face="Arial, Helvetica, sans-serif">
+					<ul class="spacedList" style="font-size:12pt;">
+						<li>Theoretical computer scientist.
+							<ul><li>Specializations in computability theory and programming language theory.</li></ul></li>
+						<li>Programmer in over fifteen languages.
+							<ul><li>C, C++, C#, F#, Haskell, Node.js, JavaScript, Common Lisp, SmileBASIC, Visual Basic, ARM Assembly, CIL Assembly, x86 Assembly, Java, Python, and Scala.</li></ul></li>
+						<li>Special skills in many popular paradigms of programming.
+							<ul><li>Familiar with functional programming, object-oriented programming, and parallel programming, among others.</li></ul></li>
+						<li>Have written multiple programming languages.
+							<ul><li>An object-oriented language called <a href="https://github.com/IAmAPersson/NSharp">N#</a> which transpiles to SmileBASIC, a purely-function language called <a href="https://github.com/IAmAPersson/HSharp">H#</a> which runs on an interpreter, and even an extention of the pbrain programming language called <a href="https://github.com/IAmAPersson/Unlimibrain-Interpreter">Unlimibrain</a>.</li></ul></li>
+						<li>I also wrote a minimalistic clone of <a href="https://github.com/IAmAPersson/Minecraft-DS">Minecraft for the Nintendo DSi</a>.</li>
+					</ul>
+				</font>
+				<h2 align="left">Philosophy</h2>
+				<font face="Arial, Helvetica, sans-serif">
+					<ul class="spacedList" style="font-size:12pt;">
+						<li>One of those guys who believes Kant when it comes to metaphysics and epistemology.
+							<ul><li>Besides being familiar with transcendental idealism, also familiar with rationalism and empiricism.</li></ul></li>
+						<li>Specialization in symbolic logic.
+							<ul><li>Propositional logic, first-order logic, higher-order logic, and currently learning modal logic.</li>
+							<li>Wrote a paper about higher-order logic titled <a href="./assets/secondorder.pdf">Extending Benson Mates' System of Logic to the Second Order</a>.</li></ul></li>
+						<li>Familiar with intelligence analysis.</li>
+					</ul>
+				</font>
+				<h1 align="left" id="brainfck">A pbrain Interpreter</h1>
+				<p>pbrain is a programming language that only has 11 commands. The full specification of the programming language may be found <a href="https://esolangs.org/wiki/Pbrain">here</a>. Below is an interpreter I wrote for anyone visiting this webpage to enjoy!</p>
+				<textarea id="input" rows="10" cols="102" font="consolas">
+(++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.):>>>>>>>>>>>>:>>>>>>>>>>>>:>>>>>>>>>>>>:>>>>>>>>>>>>:
+
+[-][This program will output "Hello World" five times.]</textarea>
+				<p>Please enter the program input here:</p>
+				<input type="text" id="prginput">
+				<button onclick="interpret()">Run!</button>
+				<p>Output:</p>
+				<textarea id="output" rows="5" cols="102" font="consolas"></textarea>
+				<p align="right"></p>
+			</div>
+			<font face="Arial, Helvetica, sans-serif">
+				<div id="footer">
+					© 2019 - Phillip Lane, The University of Alabama in Huntsville
+				</div>
+			</font>
+		</div>
+	</body>
+</html>
