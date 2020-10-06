@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #412234;
+    margin:0
+}
+
+.header{
+    background-color:#6D466B;
+    color: #FFF;
+    text-align: center;
+    padding: 10% 0%;
+    display: grid;
+    grid-template-columns: 50% 25%;
+}
+
+.img-myself {
+    width: 600px;
+    height: auto 0;
+}
+
+.img-github {
+    width: 100px;
+    height: auto 0;
+}
+
+.text-1{
+    color: #FFF;
+    text-align: center;
+    margin: 12.5% 30%;
+}
+
+.skills{
+    background-color: #B49FCC;
+    text-align: center;
+    font-size: 24px;
+    padding: 12.5% 0%;
+}
