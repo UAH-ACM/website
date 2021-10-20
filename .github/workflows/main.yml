@@ -1,0 +1,17 @@
+on: push
+name: Deploy Website
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v2
+
+    - name: Sync Files on Web Server
+      uses: SamKirkland/FTP-Deploy-Actions@4.1.0
+      with:
+        server: ${{ secrets.SERVER_NAME }}
+        username: ${{ secrets.FTP_USER }}
+        password: "Hello" #${{ secrets.FTP_PASS }}
+        port: ${{ secrets.FTP_PORT }}
