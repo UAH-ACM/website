@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    font-size: 25px;
+}
+
+.container-404 {
+    background-color: #646262;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: left;
+    width: 100%;
+}
+
+.container-404 a {
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.container-404 a:hover {
+    background-color: grey;
+    color: black;
+}
+
+@media screen and (max-width: 500px) {
+    .container-404 a {
+        float: none;
+        display: block;
+    }
+}
+
+.acm-logo a {
+    color: #0092FF;
+    text-decoration: none;
+    margin: auto;
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+}
+
+.acm-logo a:hover {
+    background-color: #646262;
+    color: #0092FF;
+}
+
+.options a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.error {
+    font-size: 200px;
+    margin: auto;
+    width: 400px;
+    color: grey;
+    font-family: 'Heebo', sans-serif;
+    margin-top: 50px;
+    align-items: center;
+}
