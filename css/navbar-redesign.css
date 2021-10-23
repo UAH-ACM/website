@@ -21,7 +21,7 @@ body {
 }
 
 .container-404 a:hover {
-    background-color: grey;
+    background-color: #646262;
     color: black;
 }
 
@@ -33,17 +33,21 @@ body {
 }
 
 .acm-logo a {
-    color: #0092FF;
-    text-decoration: none;
     margin: auto;
-    font-size: 17px;
-    font-weight: bold;
     display: flex;
 }
 
 .acm-logo a:hover {
     background-color: #646262;
-    color: #0092FF;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    vertical-align: middle;
 }
 
 .options a {
