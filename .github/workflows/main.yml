@@ -4,18 +4,6 @@ on:
     #branches:
     #- 'master'
 
-# For now we will run this self hosted. We may choose
-# to spin up a couple of these for extra reliability.
-# Self-Hosted runners are setup at the organization
-# Level.
-#
-# NOTE: I initially wanted to implement this with a
-# fallback on Github-Hosted runners should ours go
-# down (for any reason). This is not currently supported.
-# Check back on this article for more information:
-# https://github.community/t/self-hosted-runner-with-github-runner-as-backup-when-offline/17504/10
-runs-on: self-hosted
-
 # This workflow deploys the website to our main hosting
 # Server. This should allow us to update the website
 # by simply updating the website on Github.
@@ -23,7 +11,18 @@ name: Deploy Website
 jobs:
   web-deploy:
     name: Deploy
-    runs-on: ubuntu-latest
+
+    # For now we will run this self hosted. We may choose
+    # to spin up a couple of these for extra reliability.
+    # Self-Hosted runners are setup at the organization
+    # Level.
+    #
+    # NOTE: I initially wanted to implement this with a
+    # fallback on Github-Hosted runners should ours go
+    # down (for any reason). This is not currently supported.
+    # Check back on this article for more information:
+    # https://github.community/t/self-hosted-runner-with-github-runner-as-backup-when-offline/17504/10
+    runs-on: self-hosted
     steps:
     # Pull latest code from GitHub
     - name: Get latest code
