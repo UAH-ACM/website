@@ -9,9 +9,9 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Sync Files on Web Server
-      uses: SamKirkland/FTP-Deploy-Actions@4.1.0
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
         server: ${{ secrets.SERVER_NAME }}
         username: ${{ secrets.FTP_USER }}
-        password: "Hello" #${{ secrets.FTP_PASS }}
+        password: ${{ secrets.FTP_PASS }}
         port: ${{ secrets.FTP_PORT }}
