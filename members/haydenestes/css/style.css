@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+    padding: 0;
+    color: #f8f8f2;
+    background: #282a36;
+    margin: 5% 5% 5% 5%;
+}
+
+p {
+    margin: 0% 0% 0% 1%;
+}
+
+a {
+    text-decoration: none;
+}
+a:link {
+    color: #8be9fd;
+}
+a:visited {
+    color: #bd94f9;
+}
+a:hover {
+    color: #bd94d0;
+}
+a:active {
+    color: #bd94a0;
+}
