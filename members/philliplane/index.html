@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button onclick="buttonClick()" id="button">Click for Mayonnaise</button>
+        <div style="visibility: hidden;" id="mydiv">
+            <img style="transform: rotate(0deg); height: 100%;" src="assets/000143819.webp" id="image" onclick="mainPage()"></img>
+        </div>
+    </body>
+    <script>
+        let rotate = 0;
+
+        function buttonClick() {
+            document.getElementById("mydiv").style="position:fixed; height: 100%; width: 100%; top: 0;left: 0;";
+            document.getElementById("button").style="visibility: hidden;";
+
+            window.alert("Click on the mayo to return to the main page.");
+
+            let song = new Audio("assets/Among\ Us\ Trap\ Remix\ Bass\ Boosted\ Leonz.mp3");
+            song.autoplay = true;
+            song.play();
+
+            setInterval(() => {
+                rotate = rotate === 359 ? 0 : rotate + 1;
+                document.getElementById("image").style=`transform: rotate(${rotate}deg); height: 100%;`;
+            }, 50);
+        }
+
+        function mainPage() {
+            window.location.href = "http://uah.acm.org/";
+        }
+    </script>
+</html>
