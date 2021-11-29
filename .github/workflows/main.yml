@@ -33,7 +33,7 @@ jobs:
 
     # Update files on the webserver using FTP.
     - name: Sync Files on Web Server
-      uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
         server: ${{ secrets.SERVER_NAME }}
         username: ${{ secrets.FTP_USER }}
