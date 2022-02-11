@@ -1,6 +1,6 @@
-@charset "UTF-8";
-/* CSS Document */
-/* Table of Contents
+    @charset "UTF-8";
+    /* CSS Document */
+    /* Table of Contents
 -----------------------------------------
 -General Content
 -Typography
@@ -9,515 +9,607 @@
 -Footer
 -Media Queries
 -----------------------------------------*/
-
-/*General Content
+    /*General Content
 -----------------------------------------*/
-.main {padding-top: 3%;}
-.row {padding: 2% 0;}
-.red {background-color: #ffffff;}
-.grey {
-	background-color: #FFFFFF;
-}
-
-
-/*Typography
+    
+    .main {
+        padding-top: 3%;
+    }
+    
+    .row {
+        padding: 2% 0;
+    }
+    
+    .red {
+        background-color: #ffffff;
+    }
+    
+    .grey {
+        background-color: #FFFFFF;
+    }
+    /*Typography
 -----------------------------------------*/
-body {
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 1.5em;
-	color: #000;
-}
-a {
-	text-decoration: none;
-	color: #88D5FF;
-}
-
-.button-primary {
-	margin: 0 auto;
-	text-align: center;
-}
-/*Tile Headings*/
-h1 {
-	font-family: 'Heebo', sans-serif;
-	font-size: 1.2em;
-	margin: 0.67em;
-	color: #000000;
-	text-align: center;
-}
-/*Tile Body*/
-h2 {
-	font-family: "Ubuntu", sans-serif;
-	font-size: 1.1em;
-	color: #000000; 
-	text-align: center;
-}
-/*Copyright Footer Line*/
-h3 {
-	font-family: "Ubuntu", sans-serif;
-	font-size: 1.2em;
-	color: #0092FF; 
-	text-align: left;
-}
-
-/*Footer Text*/
-h4 {
-	font-family: "Heebo", sans-serif;
-	font-size: 2em;
-	margin: 0.67em;
-	color: #FFFFFF;
-	text-align: center;
-}
-/*About Us Signature*/
-h5 {
-	font-family: 'Heebo', sans-serif;
-	font-size: 1.2em;
-	margin: 0.67em;
-	color: #000000;
-	text-align: left;
-}
-
-.videos { 
-		margin: auto; 
-		text-align: center;
-}
-/*Three Tiles*/
-.left {
-	background-color: #FFFFFF;
-	margin: -30px 0px 10px -60px;
-	border: #ffffff solid medium;
-}
-.center {
-	background-color: #FFFFFF;
-	margin: -30px -30px 10px -30px;
-	border: #ffffff solid medium;
-}
-.right {
-	background-color: #FFFFFF;
-	margin: -30px -60px 10px 0px;
-	border: #ffffff solid medium;
-}
-.containercontact {
-	margin: 0 auto;
-	text-align: left;
-	padding: 20px 20px 20px 40px;
-	background-color: #CCCCCC;
-	border: #666 solid thick;
-	border-radius: 10px;
-}
-.bio {
-	text-align: center;
-	margin: -150px -350px 0px 0px;
-}
-/*Header & Navigation
+    
+    body {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.5em;
+        color: #000;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #88D5FF;
+    }
+    
+    .button-primary {
+        margin: 0 auto;
+        text-align: center;
+    }
+    /*Tile Headings*/
+    
+    h1 {
+        font-family: 'Heebo', sans-serif;
+        font-size: 1.2em;
+        margin: 0.67em;
+        color: grey;
+        text-align: center;
+    }
+    /*Tile Body*/
+    
+    h2 {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1.1em;
+        color: grey;
+        text-align: center;
+    }
+    /*Copyright Footer Line*/
+    
+    h3 {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1.2em;
+        color: #0092FF;
+        text-align: left;
+    }
+    /*Footer Text*/
+    
+    h4 {
+        font-family: "Heebo", sans-serif;
+        font-size: 2em;
+        margin: 0.67em;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    /*About Us Signature*/
+    
+    h5 {
+        font-family: 'Heebo', sans-serif;
+        font-size: 1.2em;
+        margin: 0.67em;
+        color: #000000;
+        text-align: left;
+    }
+    
+    .videos {
+        margin: auto;
+        text-align: center;
+    }
+    /*Three Tiles*/
+    
+    .left {
+        background-color: black;
+        margin: -30px 0px 10px -60px;
+        border: black solid medium;
+    }
+    
+    .center {
+        background-color: black;
+        margin: -30px -30px 10px -30px;
+        border: black solid medium;
+    }
+    
+    .right {
+        background-color: black;
+        margin: -30px -60px 10px 0px;
+        border: black solid medium;
+    }
+    
+    .containercontact {
+        margin: 0 auto;
+        text-align: left;
+        padding: 20px 20px 20px 40px;
+        background-color: #CCCCCC;
+        border: #666 solid thick;
+        border-radius: 10px;
+    }
+    
+    .bio {
+        text-align: center;
+        margin: -150px -350px 0px 0px;
+    }
+    /*Header & Navigation
 -----------------------------------------*/
-header.main_nav {
-		padding: 1% 0;
-		display: block;
-}
-.navbar {
-	background-color: #FFFFFF;
-	text-align: center;
-	padding: 24px 8px 2px;
-	font-weight: 900;
-	font-size: x-large;
-	color: #153c75;
-}
-.portfolionav {
-	background-color: #000000;
-	text-align: center;
-	padding: 0 0 2px 0;
-	font-weight: 700;
-	font-size: large;
-	color: #66a4ff;
-}
-.navdesign {
-	margin-left: 2%;
-	margin-right: 2%;
-	-webkit-transition: all 0.5s ease 0s;
-	-o-transition: all 0.5s ease 0s;
-	transition: all 0.5s ease 0s;
-}
-.navillustrate {
-	margin-left: 2%;
-	margin-right: 2%;
-	-webkit-transition: all 0.5s ease 0s;
-	-o-transition: all 0.5s ease 0s;
-	transition: all 0.5s ease 0s;
-}
-.navsfx {
-	margin-left: 2%;
-	margin-right: 2%;
-	-webkit-transition: all 0.5s ease 0s;
-	-o-transition: all 0.5s ease 0s;
-	transition: all 0.5s ease 0s;
-}
-.navhome {
-	margin-left: 2%;
-	margin-right: 2%;
-	-webkit-transition: all 0.5s ease 0s;
-	-o-transition: all 0.5s ease 0s;
-	transition: all 0.5s ease 0s;
-}
-.navart {
-	margin-left: 2%;
-	margin-right: 2%;
-	-webkit-transition: all 0.5s ease 0s;
-	-o-transition: all 0.5s ease 0s;
-	transition: all 0.5s ease 0s;
-}
-.navvideos {
-	margin-left: 2%;
-	margin-right: 2%;
-	-webkit-transition: all 0.5s ease 0s;
-	-o-transition: all 0.5s ease 0s;
-	transition: all 0.5s ease 0s;
-}
-.navcontact {
-	margin-left: 2%;
-	-webkit-transition: all 0.5s ease 0s;
-	-o-transition: all 0.5s ease 0s;
-	transition: all 0.5s ease 0s;
-}
-/*Images & Media
+    
+    header.main_nav {
+        padding: 1% 0;
+        display: block;
+    }
+    
+    .navbar {
+        background-color: #FFFFFF;
+        text-align: center;
+        padding: 24px 8px 2px;
+        font-weight: 900;
+        font-size: x-large;
+        color: #153c75;
+    }
+    
+    .portfolionav {
+        background-color: #000000;
+        text-align: center;
+        padding: 0 0 2px 0;
+        font-weight: 700;
+        font-size: large;
+        color: #66a4ff;
+    }
+    
+    .navdesign {
+        margin-left: 2%;
+        margin-right: 2%;
+        -webkit-transition: all 0.5s ease 0s;
+        -o-transition: all 0.5s ease 0s;
+        transition: all 0.5s ease 0s;
+    }
+    
+    .navillustrate {
+        margin-left: 2%;
+        margin-right: 2%;
+        -webkit-transition: all 0.5s ease 0s;
+        -o-transition: all 0.5s ease 0s;
+        transition: all 0.5s ease 0s;
+    }
+    
+    .navsfx {
+        margin-left: 2%;
+        margin-right: 2%;
+        -webkit-transition: all 0.5s ease 0s;
+        -o-transition: all 0.5s ease 0s;
+        transition: all 0.5s ease 0s;
+    }
+    
+    .navhome {
+        margin-left: 2%;
+        margin-right: 2%;
+        -webkit-transition: all 0.5s ease 0s;
+        -o-transition: all 0.5s ease 0s;
+        transition: all 0.5s ease 0s;
+    }
+    
+    .navart {
+        margin-left: 2%;
+        margin-right: 2%;
+        -webkit-transition: all 0.5s ease 0s;
+        -o-transition: all 0.5s ease 0s;
+        transition: all 0.5s ease 0s;
+    }
+    
+    .navvideos {
+        margin-left: 2%;
+        margin-right: 2%;
+        -webkit-transition: all 0.5s ease 0s;
+        -o-transition: all 0.5s ease 0s;
+        transition: all 0.5s ease 0s;
+    }
+    
+    .navcontact {
+        margin-left: 2%;
+        -webkit-transition: all 0.5s ease 0s;
+        -o-transition: all 0.5s ease 0s;
+        transition: all 0.5s ease 0s;
+    }
+    /*Images & Media
 -----------------------------------------*/
-
-ul.twittersocial {
-	height: 100px;
-	width: 180px;
-	display: block;
-	list-style-type: none;
-	text-align: center;
-	float:right;
-	margin: 30px -70% 0 0;
-}
-ul.twittersocial li {
-	font-size: 2.8em;
-	display: inline;
-	padding: 0 2%;
-	float:right;
-}
-ul.youtubesocial {
-	height: 100px;
-	width: 180px;
-	display: block;
-	list-style-type: none;
-	text-align: center;
-	float:right;
-	margin: -40px -70% 0 550%;
-}
-ul.youtubesocial li {
-	font-size: 2.8em;
-	display: inline;
-	padding: 0 2%;
-	float:right;
-}
-ul.twittersocial li a {color: #000000;}
-ul.twittersocial li.twitter a:hover{color: rgb(0, 172, 237);}
-ul.twittersocial li.instagram a:hover{color: rgb(81, 127, 237);}
-ul.youtubesocial li a {color: #000000;}
-ul.youtubesocial li.youtube a:hover{color: rgb(187, 0, 0);}
-ul.youtubesocial li.facebook a:hover{color: #355CB6;}
-img {max-width: 100%;}
-.gallery-item:hover {opacity: 0.8;}
-img.avatar {
-}
-.logo { 
-	float: left;
-	margin: 0 auto; 
-	display: relative;
-	left: 30px;
-	right: 30px;
-	
-}
-.logo a:hover {opacity: 0.8;}
-.shop {
-	text-align: center;
-	float: right;
-	margin: 70px -35% 0 100%; 
-}
-.shop a {
-	font-size: 2.1em;
-	color: #FFFFFF;
-	text-decoration: none;
-	text-transform: uppercase;
-	background-color: #000000;
-	border: 8px solid #000000;
-	border-radius: 20px;
-	padding: 30px 10px 30px 10px;
-}
-.shop a:hover {
-	background-color: #ffcc66;
-	color: #000000;
-	border-radius: 20px;
-	border: 8px solid #ffcc66;
-}
-.contactme {
-	position: fixed;
-	text-align: center;
-	background: #000000;
-	bottom: 0;
-	right: 0;
-	margin: 0 20px 30px 0;
-}
-.contactme a{
-	font-size: 1em;
-	color: #FFFFFF;
-	text-decoration: none;
-	text-transform: uppercase;
-	background-color: #66a4ff;
-	border: 8px solid #66a4ff;
-	border-radius: 20px;
-	padding: 15px 10px 15px 10px;
-}
-.contactme a:hover {
-	background-color: #000000;
-	color: #66a4ff;
-	border-radius: 20px;
-	border: 8px solid #000000;
-}
-
-.banner a:hover {opacity: 0.7;}
-.banner2 a:hover {opacity: 0.7;}
-.banner2 {
-	margin: 0px -60px 0px -60px;
-}
-
-.rightimage {
-	text-align: center;
-}
-
-/*Footer
+    
+    ul.twittersocial {
+        height: 100px;
+        width: 180px;
+        display: block;
+        list-style-type: none;
+        text-align: center;
+        float: right;
+        margin: 30px -70% 0 0;
+    }
+    
+    ul.twittersocial li {
+        font-size: 2.8em;
+        display: inline;
+        padding: 0 2%;
+        float: right;
+    }
+    
+    ul.youtubesocial {
+        height: 100px;
+        width: 180px;
+        display: block;
+        list-style-type: none;
+        text-align: center;
+        float: right;
+        margin: -40px -70% 0 550%;
+    }
+    
+    ul.youtubesocial li {
+        font-size: 2.8em;
+        display: inline;
+        padding: 0 2%;
+        float: right;
+    }
+    
+    ul.twittersocial li a {
+        color: #000000;
+    }
+    
+    ul.twittersocial li.twitter a:hover {
+        color: rgb(0, 172, 237);
+    }
+    
+    ul.twittersocial li.instagram a:hover {
+        color: rgb(81, 127, 237);
+    }
+    
+    ul.youtubesocial li a {
+        color: #000000;
+    }
+    
+    ul.youtubesocial li.youtube a:hover {
+        color: rgb(187, 0, 0);
+    }
+    
+    ul.youtubesocial li.facebook a:hover {
+        color: #355CB6;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    .gallery-item:hover {
+        opacity: 0.8;
+    }
+    
+    img.avatar {
+        width: 100%;
+        height: auto;
+    }
+    
+    .logo {
+        float: left;
+        margin: 0 auto;
+        display: relative;
+        left: 30px;
+        right: 30px;
+    }
+    
+    .logo a:hover {
+        opacity: 0.8;
+    }
+    
+    .shop {
+        text-align: center;
+        float: right;
+        margin: 70px -35% 0 100%;
+    }
+    
+    .shop a {
+        font-size: 2.1em;
+        color: #FFFFFF;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: #000000;
+        border: 8px solid #000000;
+        border-radius: 20px;
+        padding: 30px 10px 30px 10px;
+    }
+    
+    .shop a:hover {
+        background-color: #ffcc66;
+        color: #000000;
+        border-radius: 20px;
+        border: 8px solid #ffcc66;
+    }
+    
+    .contactme {
+        position: fixed;
+        text-align: center;
+        background: #000000;
+        bottom: 0;
+        right: 0;
+        margin: 0 20px 30px 0;
+    }
+    
+    .contactme a {
+        font-size: 1em;
+        color: #FFFFFF;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: #66a4ff;
+        border: 8px solid #66a4ff;
+        border-radius: 20px;
+        padding: 15px 10px 15px 10px;
+    }
+    
+    .contactme a:hover {
+        background-color: #000000;
+        color: #66a4ff;
+        border-radius: 20px;
+        border: 8px solid #000000;
+    }
+    
+    .banner a:hover {
+        opacity: 0.7;
+    }
+    
+    .banner2 a:hover {
+        opacity: 0.7;
+    }
+    
+    .banner2 {
+        margin: 0px -60px 0px -60px;
+    }
+    
+    .rightimage {
+        text-align: center;
+    }
+    /*Footer
 -----------------------------------------*/
-ul.social {
-	display: block;
-	margin: -5% 0 -5% 0;
-	list-style-type: none;
-	text-align: center;
-	clear: both;
-}
-ul.social li {
-	font-size: 3em;
-	display: inline;
-	padding: 0 2%;
-}
-ul.social li a {color: #ffcc66;}
-ul.social li.twitter a:hover{color: rgb(0, 172, 237);}
-ul.social li.instagram a:hover{color: rgb(81, 127, 237);}
-ul.social li.youtube a:hover{color: rgb(187, 0, 0);}
-ul.social li.facebook a :hover{color: #355CB6;}
-p.copyright {
-	position: fixed;
-	text-align: center;
-	color: #666;
-	font-size: 1em;
-}
-/*Media Queries
+    
+    ul.social {
+        display: block;
+        margin: -5% 0 -5% 0;
+        list-style-type: none;
+        text-align: center;
+        clear: both;
+    }
+    
+    ul.social li {
+        font-size: 3em;
+        display: inline;
+        padding: 0 2%;
+    }
+    
+    ul.social li a {
+        color: #ffcc66;
+    }
+    
+    ul.social li.twitter a:hover {
+        color: rgb(0, 172, 237);
+    }
+    
+    ul.social li.instagram a:hover {
+        color: rgb(81, 127, 237);
+    }
+    
+    ul.social li.youtube a:hover {
+        color: rgb(187, 0, 0);
+    }
+    
+    ul.social li.facebook a :hover {
+        color: #355CB6;
+    }
+    
+    p.copyright {
+        position: fixed;
+        text-align: center;
+        color: #666;
+        font-size: 1em;
+    }
+    /*Media Queries
 -----------------------------------------*/
-@media screen and (max-width:850px){
-	.logo { 
-	float: left;
-	width: 95%;
-	margin: 0 auto; 
-	display: relative;
-	left: 30px;
-	right: 30px;
-	
-}
-.shop {
-	text-align: center;
-	float: right;
-	margin: 70px -35% 0 100%; 
-}
-.shop a {
-	font-size: 1.7em;
-	color: #FFFFFF;
-	text-decoration: none;
-	text-transform: uppercase;
-	background-color: #000000;
-	border: 8px solid #000000;
-	border-radius: 20px;
-	padding: 30px 10px 30px 10px;
-}
-ul.twittersocial {
-	height: 100px;
-	width: 180px;
-	display: block;
-	list-style-type: none;
-	text-align: center;
-	float:right;
-	margin: 40px -70% 0 0;
-}
-ul.twittersocial li {
-	font-size: 2.3em;
-	display: inline;
-	padding: 0 2%;
-	float:right;
-}
-ul.youtubesocial {
-	height: 100px;
-	width: 180px;
-	display: block;
-	list-style-type: none;
-	text-align: center;
-	float:right;
-	margin: -50px -70% 0 550%;
-}
-ul.youtubesocial li {
-	font-size: 2.3em;
-	display: inline;
-	padding: 0 2%;
-	float:right;
-}
-}
-@media screen and (max-width:750px){
-	.logo { 
-	float: left;
-	width: 85%;
-	margin: 0 auto; 
-	display: relative;
-	left: 30px;
-	right: 30px;
-	
-}
-.shop {
-	text-align: center;
-	float: right;
-	margin: 60px -35% 0 100%; 
-}
-.shop a {
-	font-size: 1.4em;
-	color: #FFFFFF;
-	text-decoration: none;
-	text-transform: uppercase;
-	background-color: #000000;
-	border: 8px solid #000000;
-	border-radius: 20px;
-	padding: 25px 10px 25px 10px;
-}
-ul.twittersocial {
-	height: 100px;
-	width: 180px;
-	display: block;
-	list-style-type: none;
-	text-align: center;
-	float:right;
-	margin: 30px -70% 0 0;
-}
-ul.twittersocial li {
-	font-size: 2em;
-	display: inline;
-	padding: 0 2%;
-	float:right;
-}
-ul.youtubesocial {
-	height: 100px;
-	width: 180px;
-	display: block;
-	list-style-type: none;
-	text-align: center;
-	float:right;
-	margin: -55px -70% 0 550%;
-}
-ul.youtubesocial li {
-	font-size: 2em;
-	display: inline;
-	padding: 0 2%;
-	float:right;
-}
-}
-@media screen and (max-width:700px){
-	.h1 {
-	font-size: 1em;
-	color: #FF0004;
-}
-@media screen and (max-width:550px){
-	.contactme {
-	visibility: hidden;
-}
-	.logo { 
-	float: center;
-	width: 100%;
-	margin: 0 auto; 
-	display: relative;
-	left: 30px;
-	right: 30px;
-}
-.shop {
-	text-align: center;
-	float: left;
-	margin: 50px 0 0 0; 
-	width: 100%;
-}
-.shop a {
-	font-size: 1.4em;
-	color: #FFFFFF;
-	text-decoration: none;
-	text-transform: uppercase;
-	background-color: #000000;
-	border: 8px solid #000000;
-	border-radius: 20px;
-	padding: 45px 50px 45px 50px;
-}
-/*Three Tiles*/
-.left {
-	background-color: #FFFFFF;
-	margin: 0 auto;
-	border: #ffffff solid medium;
-}
-.center {
-	background-color: #FFFFFF;
-	margin: 0 auto;
-	border: #ffffff solid medium;
-}
-.right {
-	background-color: #FFFFFF;
-	margin: 0 auto;
-	border: #ffffff solid medium;
-}
-/*Bottom Banners*/
-.banner2 {
-	margin: 0px auto;
-}
-ul.twittersocial {
-	height: 100px;
-	width: 180px;
-	display: block;
-	list-style-type: none;
-	text-align: center;
-	float: right;
-	margin: -90px -20px 0 0;
-}
-ul.twittersocial li {
-	font-size: 3em;
-	display: inline;
-	padding: 0 2%;
-	float: right;
-}
-ul.youtubesocial {
-	height: 100px;
-	width: 180px;
-	display: block;
-	list-style-type: none;
-	text-align: center;
-	float: right;
-	margin: -35px -20px 0 550%;
-}
-ul.youtubesocial li {
-	font-size: 3em;
-	display: inline;
-	padding: 0 2%;
-	float: right;
-}
-ul.social {
-	display: block;
-	margin: -5% 0 -5% 0;
-	list-style-type: none;
-	text-align: center;
-	clear: both;
-}
-ul.social li {
-	font-size: 2.2em;
-	display: inline;
-	padding: 0 2%;
-}
-}
+    
+    @media screen and (max-width:850px) {
+        .logo {
+            float: left;
+            width: 95%;
+            margin: 0 auto;
+            display: relative;
+            left: 30px;
+            right: 30px;
+        }
+        .shop {
+            text-align: center;
+            float: right;
+            margin: 70px -35% 0 100%;
+        }
+        .shop a {
+            font-size: 1.7em;
+            color: #FFFFFF;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color: #000000;
+            border: 8px solid #000000;
+            border-radius: 20px;
+            padding: 30px 10px 30px 10px;
+        }
+        ul.twittersocial {
+            height: 100px;
+            width: 180px;
+            display: block;
+            list-style-type: none;
+            text-align: center;
+            float: right;
+            margin: 40px -70% 0 0;
+        }
+        ul.twittersocial li {
+            font-size: 2.3em;
+            display: inline;
+            padding: 0 2%;
+            float: right;
+        }
+        ul.youtubesocial {
+            height: 100px;
+            width: 180px;
+            display: block;
+            list-style-type: none;
+            text-align: center;
+            float: right;
+            margin: -50px -70% 0 550%;
+        }
+        ul.youtubesocial li {
+            font-size: 2.3em;
+            display: inline;
+            padding: 0 2%;
+            float: right;
+        }
+    }
+    
+    @media screen and (max-width:750px) {
+        .logo {
+            float: left;
+            width: 85%;
+            margin: 0 auto;
+            display: relative;
+            left: 30px;
+            right: 30px;
+        }
+        .shop {
+            text-align: center;
+            float: right;
+            margin: 60px -35% 0 100%;
+        }
+        .shop a {
+            font-size: 1.4em;
+            color: #FFFFFF;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color: #000000;
+            border: 8px solid #000000;
+            border-radius: 20px;
+            padding: 25px 10px 25px 10px;
+        }
+        ul.twittersocial {
+            height: 100px;
+            width: 180px;
+            display: block;
+            list-style-type: none;
+            text-align: center;
+            float: right;
+            margin: 30px -70% 0 0;
+        }
+        ul.twittersocial li {
+            font-size: 2em;
+            display: inline;
+            padding: 0 2%;
+            float: right;
+        }
+        ul.youtubesocial {
+            height: 100px;
+            width: 180px;
+            display: block;
+            list-style-type: none;
+            text-align: center;
+            float: right;
+            margin: -55px -70% 0 550%;
+        }
+        ul.youtubesocial li {
+            font-size: 2em;
+            display: inline;
+            padding: 0 2%;
+            float: right;
+        }
+    }
+    
+    @media screen and (max-width:700px) {
+        .h1 {
+            font-size: 1em;
+            color: #FF0004;
+        }
+        @media screen and (max-width:550px) {
+            .contactme {
+                visibility: hidden;
+            }
+            .logo {
+                float: center;
+                width: 100%;
+                margin: 0 auto;
+                display: relative;
+                left: 30px;
+                right: 30px;
+            }
+            .shop {
+                text-align: center;
+                float: left;
+                margin: 50px 0 0 0;
+                width: 100%;
+            }
+            .shop a {
+                font-size: 1.4em;
+                color: #FFFFFF;
+                text-decoration: none;
+                text-transform: uppercase;
+                background-color: #000000;
+                border: 8px solid #000000;
+                border-radius: 20px;
+                padding: 45px 50px 45px 50px;
+            }
+            /*Three Tiles*/
+            .left {
+                background-color: #FFFFFF;
+                margin: 0 auto;
+                border: #ffffff solid medium;
+            }
+            .center {
+                background-color: #FFFFFF;
+                margin: 0 auto;
+                border: #ffffff solid medium;
+            }
+            .right {
+                background-color: #FFFFFF;
+                margin: 0 auto;
+                border: #ffffff solid medium;
+            }
+            /*Bottom Banners*/
+            .banner2 {
+                margin: 0px auto;
+            }
+            ul.twittersocial {
+                height: 100px;
+                width: 180px;
+                display: block;
+                list-style-type: none;
+                text-align: center;
+                float: right;
+                margin: -90px -20px 0 0;
+            }
+            ul.twittersocial li {
+                font-size: 3em;
+                display: inline;
+                padding: 0 2%;
+                float: right;
+            }
+            ul.youtubesocial {
+                height: 100px;
+                width: 180px;
+                display: block;
+                list-style-type: none;
+                text-align: center;
+                float: right;
+                margin: -35px -20px 0 550%;
+            }
+            ul.youtubesocial li {
+                font-size: 3em;
+                display: inline;
+                padding: 0 2%;
+                float: right;
+            }
+            ul.social {
+                display: block;
+                margin: -5% 0 -5% 0;
+                list-style-type: none;
+                text-align: center;
+                clear: both;
+            }
+            ul.social li {
+                font-size: 2.2em;
+                display: inline;
+                padding: 0 2%;
+            }
+        }
+    }
