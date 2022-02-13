@@ -71,6 +71,10 @@ body {
     color: white
 }
 
+.row {
+    color: white
+}
+
 /* scrollbar width */
 ::-webkit-scrollbar {
   width: 15px;
