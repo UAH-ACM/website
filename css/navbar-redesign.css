@@ -1,0 +1,96 @@
+body {
+    background-color: black;
+    font-size: 25px;
+}
+
+.container-404 {
+    background-color: #646262;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: left;
+    width: 100%;
+}
+
+.container-404 a {
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.container-404 a:hover {
+    background-color: #646262;
+    color: black;
+}
+
+@media screen and (max-width: 500px) {
+    .container-404 a {
+        float: none;
+        display: block;
+    }
+}
+
+.acm-logo a {
+    margin: auto;
+    display: flex;
+}
+
+.acm-logo a:hover {
+    background-color: #646262;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.options a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.error {
+    font-size: 200px;
+    margin: auto;
+    width: 400px;
+    color: grey;
+    font-family: 'Heebo', sans-serif;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.p {
+    color: white
+}
+
+.row {
+    color: white
+}
+
+/* scrollbar width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* scrollbar Track */
+::-webkit-scrollbar-track {
+    background: #646262;
+}
+
+/* scrollbar Handle */
+::-webkit-scrollbar-thumb {
+    background: #8a8a91;  /* fallback for old browsers */
+}
+
+/* scrollbar Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #909094;
+}
