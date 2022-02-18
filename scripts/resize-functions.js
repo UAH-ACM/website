@@ -1,3 +1,4 @@
+// https://codereview.stackexchange.com/questions/213760/window-innerwidth-workaround-for-when-it-returns-the-wrong-value
 const binarySearch = dim => function bin(start, end) {
     const guess = Math.floor((start + end) / 2)
 
