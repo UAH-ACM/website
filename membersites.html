@@ -27,6 +27,8 @@
 
     <link rel="stylesheet" href="css/navbar-redesign.css">
 
+    <script type="text/javascript" src=".\scripts\resize-functions.js"></script>
+
     <!-- Favicon ––––––––––––––––––––––––––––––––––––––––––––––––––--------------------->
     <link rel="icon" type="image/png" href="images/acm_logo.png">
 
@@ -107,43 +109,22 @@
             </div>
         </div>
     </div>
-
     <script>
-        const binarySearch = dim => function bin(start, end) {
-            const guess = Math.floor((start + end) / 2)
+        window.onload = function () {
+            var mobile = document.getElementById("mobile");
+            var desktop = document.getElementById("desktop");
+            var site_map = document.getElementById("mobile-site-map");
 
-            // this checks if we have the correct value, if not it will keep calling itself until there's a match
-            if (window.matchMedia(`(${dim}: ${guess}px)`).matches) {
-                return guess
+            if (getCorrectDimension() < 550 && mobile === null && site_map === null) {
+                desktop.remove();
+                document.getElementById("bar").innerHTML += getMobileDiv();
             }
-
-            // since it is not a match, then we need to recalibrate the range and call again.
-            // for that we check the boolean value using with min-width (height) rule.
-            return window.matchMedia(`(min-${dim}: ${guess}px)`).matches
-                ? bin(guess, end)
-                : bin(start, guess)
-        }
-
-        const getCorrectDimension = (dim = 'width', range = 300) => {
-            if (dim !== 'width' && dim !== 'height') {
-                throw Error('`getCorrectDimension` accepts "width" or "height" as parameter')
+            else if ((getCorrectDimension() > 550) && (desktop === null) && (mobile != null)) {
+                mobile.remove();
+                site_map.remove();
+                document.getElementById("bar").innerHTML += getDesktopDiv();
             }
-
-            let prop = 'inner' + dim.charAt(0).toUpperCase() + dim.slice(1)
-
-            // here checks if the window.innerWidth or Height it's the correct one
-            if (window.matchMedia(`(${dim}: ${window[prop]}px)`).matches) {
-                return window[prop]
-            }
-
-            // here, since the value is wrong we use binarySearch to find its correct value
-            const start = window[prop] - range >= 0 ? window[prop] - range : 0
-            const end = window[prop] + range
-
-            return binarySearch(dim)(start, end)
-
-        }
-
+        };
         window.onresize = function () {
             var mobile = document.getElementById("mobile");
             var desktop = document.getElementById("desktop");
@@ -151,93 +132,15 @@
 
             if (getCorrectDimension() < 550 && mobile === null && site_map === null) {
                 desktop.remove();
-                document.getElementById("bar").innerHTML +=
-                    `            <div id="mobile">
-                    <div class="row">
-                        <div class="four columns">
-                            <div class="left">
-                                <div class="leftimage">
-                                    <a href="https://www.acm.org"><img src="images/acm-logo-transparent.png" width="100%"
-                                            alt="Association for Computing Machinery"></a>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-    
-                <div class="row-bot" id="mobile-site-map" style="display: flex; justify-content: center">
-                    <div class="four columns" style="font-size: medium; padding: 2%">
-                        <div class="rightimage">                            
-                            <a href="index.html">Home</a>
-                        </div>
-                    </div>
-    
-                    <div class="four columns" style="font-size: medium; padding: 2%">
-                        <div class="rightimage">
-                            <a href="aboutus.html">About Us</a>
-                        </div>
-                    </div>
-    
-                    <div class="four columns" style="font-size: medium; padding: 2%">
-                        <div class="rightimage">
-                            <a href="membership.html">Membership</a>
-                        </div>
-                    </div>
-    
-                    <div class="four columns" style="font-size: medium; padding: 2%">
-                        <div class="rightimage">
-                            <a href="projects.html">Projects</a>
-                        </div>
-                    </div>
-    
-                    <div class="four columns" style="font-size: medium; padding: 2%">
-                        <div class="rightimage">
-                            <a href="contactus.html">Contact Us</a>
-                        </div>
-                    </div>
-                        </div>
-                    </div>
-                </div>`
+                document.getElementById("bar").innerHTML += getMobileDiv();
             }
             else if ((getCorrectDimension() > 550) && (desktop === null) && (mobile != null)) {
                 mobile.remove();
                 site_map.remove();
-                document.getElementById("bar").innerHTML +=
-                    `
-                        <div class="row" id="desktop">
-                            <div class="four columns">
-                                <div class="left">
-                                    <div class="leftimage">
-                                        <a href="https://www.acm.org"><img src="images/acm-logo-transparent.png" width="100%"
-                                                alt="Association for Computing Machinery"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="four columns" style="font-size: medium">
-                                <div class="left">
-                                    <div class="rightimage">
-                                        <a href="index.html">Home</a>
-                                        <h1></h1>
-                                        <a href="aboutus.html">About Us</a>
-                                        <h1></h1>
-                                        <a href="membership.html">Membership</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="four columns" style="font-size: medium">
-                                <div class="right">
-                                    <div class="rightimage">
-                                        <a href="projects.html">Projects</a>
-                                        <h1></h1>
-                                        <a href="contactus.html">Contact Us</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                            `
+                document.getElementById("bar").innerHTML += getDesktopDiv();
             }
         };
     </script>
-
 </body>
 
 </html>
