@@ -26,6 +26,8 @@
 
     <link rel="stylesheet" href="css/navbar-redesign.css" />
 
+    <script type="text/javascript" src=".\scripts\resize-functions.js"></script>
+
     <!-- Favicon ––––––––––––––––––––––––––––––––––––––––––––––––––--------------------->
     <link rel="icon" href="images/acm_logo.png" />
 </head>
@@ -113,41 +115,44 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="four columns">
-                    <div class="left">
-                        <div class="leftimage" style="margin-left: 5%; margin-right: 5%;">
-                            <a href="https://www.acm.org"><img src="images/acm-logo-transparent.png" width="100%"
-                                    alt="Association for Computing Machinery" /></a>
+            <div id="bar">
+                <div class="row" id="desktop">
+                    <div class="four columns">
+                        <div class="left">
+                            <div class="leftimage">
+                                <a href="https://www.acm.org"><img src="images/acm-logo-transparent.png" width="100%"
+                                        alt="Association for Computing Machinery"></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="four columns" style="font-size: medium">
-                    <div class="center">
-                        <div class="rightimage">
-                            <a href="index.html">Home</a>
-                            <h1></h1>
-                            <a href="aboutus.html">About Us</a>
-                            <h1></h1>
-                            <a href="membership.html">Membership</a>
+                    <div class="four columns" style="font-size: medium">
+                        <div class="left">
+                            <div class="rightimage">
+                                <a href="index.html">Home</a>
+                                <h1></h1>
+                                <a href="aboutus.html">About Us</a>
+                                <h1></h1>
+                                <a href="membership.html">Membership</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="four columns" style="font-size: medium">
-                    <div class="right">
-                        <div class="rightimage">
-                            <a href="projects.html">Projects</a>
-                            <h1></h1>
-                            <a href="contactus.html">Contact Us</a>
+                    <div class="four columns" style="font-size: medium">
+                        <div class="right">
+                            <div class="rightimage">
+                                <a href="projects.html">Projects</a>
+                                <h1></h1>
+                                <a href="contactus.html">Contact Us</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--End of Container Main-->
         </div>
     </div>
+    <script>
+        driverCode();
+        window.onresize = driverCode;
+    </script>
 </body>
 
 </html>

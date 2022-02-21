@@ -539,32 +539,27 @@
                 margin: 50px 0 0 0;
                 width: 100%;
             }
-            .shop a {
-                font-size: 1.4em;
-                color: #FFFFFF;
-                text-decoration: none;
-                text-transform: uppercase;
-                background-color: #000000;
-                border: 8px solid #000000;
-                border-radius: 20px;
-                padding: 45px 50px 45px 50px;
-            }
             /*Three Tiles*/
             .left {
-                background-color: #FFFFFF;
+                background-color: black;
                 margin: 0 auto;
-                border: #ffffff solid medium;
+                border: black solid medium;
             }
             .center {
-                background-color: #FFFFFF;
+                background-color: black;
                 margin: 0 auto;
-                border: #ffffff solid medium;
+                border: black solid medium;
             }
             .right {
-                background-color: #FFFFFF;
+                background-color: black;
                 margin: 0 auto;
-                border: #ffffff solid medium;
+                border: black solid medium;
             }
+
+            .p {
+                color: grey;
+            }
+
             /*Bottom Banners*/
             .banner2 {
                 margin: 0px auto;

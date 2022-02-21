@@ -27,6 +27,8 @@
 
     <link rel="stylesheet" href="css/navbar-redesign.css">
 
+    <script type="text/javascript" src=".\scripts\resize-functions.js"></script>
+
     <!-- Favicon ––––––––––––––––––––––––––––––––––––––––––––––––––--------------------->
     <link rel="icon" type="image/png" href="images/acm_logo.png">
 
@@ -84,9 +86,9 @@
                     <div class="rightimage">
                         <img src="images/philteaching.jpg" width="100%" alt="UAH ACM Nasa Space Apps 2018" />
                         <h1 style="font-size: large">CHECK OUT EVENTS</h1>
-                        <h2 style="font-size: large">Professional development and hackathons!</h2>
+                        <h2 style="font-size: large">Check out events we will be hosting with various speakers on different topics!</h2>
                     </div>
-                    <a class="button button-primary" href="calendar.html">EVENTS</a>
+                    <a class="button button-primary" href="https://uah.campuslabs.com/engage/organization/acm">EVENTS</a>
                 </div>
             </div>
 
@@ -96,9 +98,9 @@
             <div class="four columns">
                 <div class="left">
                     <div class="leftimage">
-                        <img src="images/battlecode2018.png" width="100%" alt="UAH ACM Battlecode 2018" />
-                        <h1 style="font-size: large">JOIN A PROJECT</h1>
-                        <h2 style="font-size: large">Participate on a team and get started!</h2>
+                        <img src="images/NasaSpaceApps2018.jpg" width="100%" alt="UAH ACM Nasa Space Apps 2018" />
+                        <h1 style="font-size: large">ATTEND A HACKATHON</h1>
+                        <h2 style="font-size: large">ACM will be hosting a hackathon in March, so watch out!</h2>
                     </div>
                     <a class="button button-primary" href="projects.html">PROJECTS</a>
                 </div>
@@ -117,55 +119,60 @@
 
             <div class="four columns">
                 <div class="right">
-                    <div class="rightimage">
-                        <img src="images/NasaSpaceApps2018.jpg" width="100%" alt="UAH ACM Nasa Space Apps 2018" />
-                        <h1 style="font-size: large">ATTEND A HACKATHON</h1>
-                        <h2 style="font-size: large">ACM will be participating in the NASA Space Apps Challenge 2019</h2>
+                    <div class="leftimage">
+                        <img src="images/frame.png" width="100%" alt="Server QR code" />
+                        <h1 style="font-size: large">DISCORD</h1>
+                        <h2 style="font-size: large">Join our Discord server to stay up to date on our plans and talk to us!</h2>
                     </div>
-                    <a class="button button-primary" href="https://www.spaceappschallenge.org">NASA SPACE APPS</a>
+                    <a class="button button-primary" href="https://discord.gg/QJzhk78">Discord</a>
                 </div>
             </div>
 
             <div class="twelve columns"  style="font-size: medium">
                 <h1>ABOUT UAH ACM</h1>
-                <p>UAH ACM is a student chapter formed in 2018 that aims to create a positive environment for out of classroom learning about computing. ACM gives members the opportunity to work on passion projects in a team setting. We provide a space and
+                <div style="font-size: medium;">
+                    <p>UAH ACM is a student chapter formed in 2018 that aims to create a positive environment for out of classroom learning about computing. ACM gives members the opportunity to work on passion projects in a team setting. We provide a space and
                     community to hone your craft, be creative, and create life long friendships!</p>
+                </div>
             </div>
-
         </div>
-
-        <div class="row">
-            <div class="four columns">
-                <div class="left">
-                    <div class="leftimage">
-                        <a href="https://www.acm.org"><img src="images/acm-logo-transparent.png" width="100%" alt="UAH ACM Nasa Space Apps 2018" /></a>
+        <div id="bar">
+            <div class="row" id="desktop">
+                <div class="four columns">
+                    <div class="left">
+                        <div class="leftimage">
+                            <a href="https://www.acm.org"><img src="images/acm-logo-transparent.png" width="100%"
+                                    alt="Association for Computing Machinery"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="four columns" style="font-size: medium;">
-                <div class="center">
-                    <div class="rightimage">
-                        <a href="index.html">Home</a>
-                        <h1></h1>
-                        <a href="aboutus.html">About Us</a>
-                        <h1></h1>
-                        <a href="membership.html">Membership</a>
+                <div class="four columns" style="font-size: medium">
+                    <div class="left">
+                        <div class="rightimage">
+                            <a href="index.html">Home</a>
+                            <h1></h1>
+                            <a href="aboutus.html">About Us</a>
+                            <h1></h1>
+                            <a href="membership.html">Membership</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="four columns" style="font-size: medium;">
-                <div class="right">
-                    <div class="rightimage">
-                        <a href="projects.html">Projects</a>
-                        <h1></h1>
-                        <a href="contactus.html">Contact Us</a>
+                <div class="four columns" style="font-size: medium">
+                    <div class="right">
+                        <div class="rightimage">
+                            <a href="projects.html">Projects</a>
+                            <h1></h1>
+                            <a href="contactus.html">Contact Us</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        driverCode();
+        window.onresize = driverCode;
+    </script>
 </body>
 
 </html>
