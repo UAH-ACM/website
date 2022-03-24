@@ -73,19 +73,19 @@
     /*Footer Text*/
     
     h4 {
-        font-family: "Heebo", sans-serif;
-        font-size: 2em;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1em;
         margin: 0.67em;
         color: #FFFFFF;
-        text-align: center;
+        text-align: left;
     }
     /*About Us Signature*/
     
     h5 {
-        font-family: 'Heebo', sans-serif;
-        font-size: 1.2em;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 0.9em;
         margin: 0.67em;
-        color: #000000;
+        color: white;
         text-align: left;
     }
     
