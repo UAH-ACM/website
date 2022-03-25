@@ -25,7 +25,27 @@ body {
     color: black;
 }
 
+/* Constitution page formatting */
+.articles {
+    color: white;
+    font-size: medium;
+}
 
+.article-title {
+    font-weight: bold;
+}
+
+.section-title {
+    color: #79bef3;
+}
+
+.section-text {
+    font: "Ubuntu";
+    font-size: small;
+    font-weight: lighter;
+    margin-left: 2em;
+}
+/* End of constitution page formatting */
 
 .acm-logo a {
     margin: auto;
@@ -130,6 +150,11 @@ body {
         background-color: #646262;
     }
 
+    .articles {
+        color: white;
+        font-size: medium;
+    }
+  
     .options {
         display: flex;
         flex-direction: row;
