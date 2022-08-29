@@ -35,7 +35,7 @@ const getCorrectDimension = (dim = 'width', range = 300) => {
 }
 
 const getMobileDiv = () => {
-    var mobile = `            <div id="mobile">
+    var mobile = `<div id="mobile">
                     <div class="row">
                         <div class="four columns">
                             <div class="left">
@@ -45,41 +45,41 @@ const getMobileDiv = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+    
+                    <div class="row-bot" id="mobile-site-map" style="display: flex; justify-content: center">
+                        <div class="four columns" style="font-size: medium; padding: 2%">
+                            <div class="rightimage">                            
+                                <a href="index.html">Home</a>
+                            </div>
+                        </div>
+        
+                        <div class="four columns" style="font-size: medium; padding: 2%">
+                            <div class="rightimage">
+                                <a href="aboutus.html">About Us</a>
+                            </div>
+                        </div>
+        
+                        <div class="four columns" style="font-size: medium; padding: 2%">
+                            <div class="rightimage">
+                                <a href="membership.html">Membership</a>
+                            </div>
+                        </div>
+        
+                        <div class="four columns" style="font-size: medium; padding: 2%">
+                            <div class="rightimage">
+                                <a href="projects.html">Projects</a>
+                            </div>
+                        </div>
+        
+                        <div class="four columns" style="font-size: medium; padding: 2%">
+                            <div class="rightimage">
+                                <a href="contactus.html">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-    
-                <div class="row-bot" id="mobile-site-map" style="display: flex; justify-content: center">
-                    <div class="four columns" style="font-size: medium; padding: 2%">
-                        <div class="rightimage">                            
-                            <a href="index.html">Home</a>
-                        </div>
-                    </div>
-    
-                    <div class="four columns" style="font-size: medium; padding: 2%">
-                        <div class="rightimage">
-                            <a href="aboutus.html">About Us</a>
-                        </div>
-                    </div>
-    
-                    <div class="four columns" style="font-size: medium; padding: 2%">
-                        <div class="rightimage">
-                            <a href="membership.html">Membership</a>
-                        </div>
-                    </div>
-    
-                    <div class="four columns" style="font-size: medium; padding: 2%">
-                        <div class="rightimage">
-                            <a href="projects.html">Projects</a>
-                        </div>
-                    </div>
-    
-                    <div class="four columns" style="font-size: medium; padding: 2%">
-                        <div class="rightimage">
-                            <a href="contactus.html">Contact Us</a>
-                        </div>
-                    </div>
-                        </div>
-                    </div>
-                </div>`;
+            </div>`;
 
     return mobile;
 }
@@ -112,6 +112,8 @@ const getDesktopDiv = () => {
                                         <a href="projects.html">Projects</a>
                                         <h1></h1>
                                         <a href="contactus.html">Contact Us</a>
+                                        <h1></h1>
+                                        <a href="membersites.html">One Month Projects</a>
                                     </div>
                                 </div>
                             </div>
