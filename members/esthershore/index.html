@@ -3,15 +3,30 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="description" content="Enjoy some digital bubble wrap!">
+        <meta property="og:title" content="Pop!"/>
+        <meta property="og:description" content="Enjoy some digital bubble wrap!">
+        <!-- <meta property="og:image" content="">   -->
+
+        <title>Pop!</title>
+        <link rel="icon" href="assets/pop-logo.png" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
-        <title>Website</title>
     </head>
     <body>
-        <script type="text/javascript" src="script.js"></script>
-        <h1>Hello</h1>
-            <p>This is my website!</p>
-        <div id="button-container" class="btn-container">
-            <button id="button" class="btn" onclick="show()">Click me</button>
-        </div>
+        <script src="script.js"></script>
+        <h1>Pop!</h1>
+            <p>Click to pop...</p>
+            <div id="bubble-container">
+                <button id="bubble-button" onclick="pop()">pop</button>
+            </div>
+            <button class="refresh-button" onclick="refresh()">Refresh &#x21bb;</button>
+                <div class="footer">
+                    <button id="acm-button" onclick="redirect('https://uah.acm.org/')">Back to UAH ACM</button>
+                    <a href="https://github.com/shorewind" target="_blank" rel="noopener noreferrer">
+                        <img id="github" src="assets/github-icon.png" alt="github icon">
+                    </a>
+                    <i>Created September 2022</i>
+                </div>
     </body>
 </html>

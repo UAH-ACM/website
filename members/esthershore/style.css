@@ -1,3 +1,53 @@
+* {
+    font-family: "Source Code Pro", monospace;
+}
+
 body {
-    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #E7F6F2;
+    background: #1c2121;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+}
+
+
+
+#bubble-button {
+    border-radius: 5px;
+    background: #395B64;
+    width: 2.5rem;
+    height: 1.5rem;
+    color: #395B64;
+    user-select: none;
+}
+
+.refresh-button {
+    margin: 1rem;
+}
+
+#acm-button {
+    border-radius: 8px;
+    background: #A5C9CA;
+    width: 10rem;
+    height: 3rem;
+    margin: 1rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    bottom: 1vh;
+}
+
+#github {
+    cursor: pointer;
+    height: 5vh;
+    padding: 2vh;
 }
