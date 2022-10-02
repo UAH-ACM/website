@@ -18,19 +18,20 @@ a {
 button {
     cursor: pointer;
     border: 0;
-    margin: 0.1rem;
+    margin: 0.15vh;
 }
 
 #bubble-container {
     text-align: center;
-    width: 22rem;
+    width: 45vh;
 }
 
 .bubble-button {
-    border-radius: 4px;
+    font-size: 1.5vh;
+    border-radius: 0.4vh;
     background: #395B64;
-    width: 2.5rem;
-    height: 1.5rem;
+    width: 5vh;
+    height: 3vh;
     color: #395B64;
     user-select: none;
 }
@@ -41,7 +42,7 @@ button {
 }
 
 .refresh-button {
-    margin: 1rem;
+    margin: 2vh;
 }
 
 .refresh-button:hover {
@@ -49,11 +50,13 @@ button {
 }
 
 #acm-button {
-    border-radius: 8px;
+    border-radius: 0.8vh;
     background: #A5C9CA;
-    width: 8rem;
-    height: 2rem;
-    margin: 0.5rem;
+    width: 14vh;
+    min-width: 8rem;
+    height: 4vh;
+    min-height: 2rem;
+    margin: 1vh;
     text-align: center;
 }
 
