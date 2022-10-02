@@ -35,8 +35,17 @@ button {
     user-select: none;
 }
 
+.bubble-button:hover {
+    background: #426974;
+    color: #426974;
+}
+
 .refresh-button {
     margin: 1rem;
+}
+
+.refresh-button:hover {
+    opacity: 90%;
 }
 
 #acm-button {
@@ -46,6 +55,10 @@ button {
     height: 2rem;
     margin: 0.5rem;
     text-align: center;
+}
+
+#acm-button:hover {
+    background-color: #AFD5D6;
 }
 
 .footer {

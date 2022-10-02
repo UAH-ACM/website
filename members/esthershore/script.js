@@ -23,7 +23,7 @@ function pop(i) {
     popCount++;
     document.getElementById("info").innerHTML = "pops: " + popCount;
     let popped = document.getElementById("bubble-button" + i);
-    popped.style.color = "#E7F6F2";
+    popped.style.color = "#D3E0DD";
     popped.style.background = "#2C3333";
     popped.disabled = true;
     if (popCount == 88) {
