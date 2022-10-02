@@ -25,4 +25,8 @@ function pop(i) {
     let popped = document.getElementById("bubble-button" + i);
     popped.style.color = "#E7F6F2";
     popped.style.background = "#2C3333";
+    popped.disabled = true;
+    if (popCount == 88) {
+        alert("Congrats, you popped all the bubbles!");
+    }
 }

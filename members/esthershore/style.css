@@ -7,7 +7,12 @@ body {
     align-items: center;
     flex-direction: column;
     color: #E7F6F2;
-    background: #1c2121;
+    background: #1C2121;
+}
+
+a {
+    text-decoration: none;
+    color: #E7F6F2;
 }
 
 button {
@@ -18,6 +23,7 @@ button {
 
 #bubble-container {
     text-align: center;
+    width: 22rem;
 }
 
 .bubble-button {
@@ -36,9 +42,10 @@ button {
 #acm-button {
     border-radius: 8px;
     background: #A5C9CA;
-    width: 10rem;
-    height: 3rem;
-    margin: 1rem;
+    width: 8rem;
+    height: 2rem;
+    margin: 0.5rem;
+    text-align: center;
 }
 
 .footer {
@@ -47,6 +54,7 @@ button {
     text-align: center;
     position: absolute;
     bottom: 1vh;
+    align-items: center;
 }
 
 #github {
