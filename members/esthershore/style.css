@@ -13,12 +13,15 @@ body {
 button {
     cursor: pointer;
     border: 0;
+    margin: 0.1rem;
 }
 
+#bubble-container {
+    text-align: center;
+}
 
-
-#bubble-button {
-    border-radius: 5px;
+.bubble-button {
+    border-radius: 4px;
     background: #395B64;
     width: 2.5rem;
     height: 1.5rem;

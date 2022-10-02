@@ -6,8 +6,23 @@ function refresh() {
     window.location.reload();
 }
 
-function pop() {
-    let bubble = document.getElementById("bubble-button");
-    bubble.style.color = "#E7F6F2";
-    bubble.style.background = "#2C3333"
+function makeButtons(num) {
+    for (let i = 1; i <= num; i++) {
+        bubble = document.createElement("button");
+        bubble.textContent = "pop";
+        bubble.setAttribute("class", "bubble-button");
+        bubble.setAttribute("id", "bubble-button" + i);
+        let container = document.getElementById("bubble-container");
+        container.append(bubble);
+        bubble.onclick = () => pop(i);
+    }
+}
+
+let popCount = 0;
+function pop(i) {
+    popCount++;
+    document.getElementById("info").innerHTML = "pops: " + popCount;
+    let popped = document.getElementById("bubble-button" + i);
+    popped.style.color = "#E7F6F2";
+    popped.style.background = "#2C3333";
 }

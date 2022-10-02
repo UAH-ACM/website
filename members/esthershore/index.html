@@ -13,12 +13,13 @@
         <link rel="icon" href="assets/pop-logo.png" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body onload="makeButtons(88)">
         <script src="script.js"></script>
         <h1>Pop!</h1>
-            <p>Click to pop...</p>
+        <hr width="100%">
+            <p id="info">Click to pop...</p>
+            <!-- <button class="bubble-button" id="bubble-button0" onclick="pop(0)">pop</button> -->
             <div id="bubble-container">
-                <button id="bubble-button" onclick="pop()">pop</button>
             </div>
             <button class="refresh-button" onclick="refresh()">Refresh &#x21bb;</button>
                 <div class="footer">
