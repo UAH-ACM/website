@@ -6,6 +6,18 @@ function refresh() {
     window.location.reload();
 }
 
+let i = 0;
+let text = "click to pop...";
+let speed = 100;
+
+function typeWriter() {
+    if (i < text.length) {
+      document.getElementById("info").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+
 function makeButtons(num) {
     for (let i = 1; i <= num; i++) {
         bubble = document.createElement("button");
