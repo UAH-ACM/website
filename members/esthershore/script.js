@@ -9,18 +9,17 @@ function refresh() {
 let i = 0;
 let text = "click to pop...";
 let speed = 100;
-
 function typeWriter() {
     if (i < text.length) {
-      document.getElementById("info").innerHTML += text.charAt(i);
-      i++;
-      setTimeout(typeWriter, speed);
+        document.getElementById("info").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
     }
-  }
+}
 
 function makeButtons(num) {
     for (let i = 1; i <= num; i++) {
-        bubble = document.createElement("button");
+        let bubble = document.createElement("button");
         bubble.textContent = "pop";
         bubble.setAttribute("class", "bubble-button");
         bubble.setAttribute("id", "bubble-button" + i);
@@ -32,13 +31,40 @@ function makeButtons(num) {
 
 let popCount = 0;
 function pop(i) {
-    popCount++;
-    document.getElementById("info").innerHTML = "pops: " + popCount;
+    if (popCount < 88) {
+        popCount++;
+        document.getElementById("counter").innerHTML = "pops: " + popCount;
+    }
+    if (popCount == 88) {
+        document.getElementById("info").innerHTML = "Congrats, you popped all the bubbles!"
+    }
     let popped = document.getElementById("bubble-button" + i);
     popped.style.color = "#D3E0DD";
     popped.style.background = "#2C3333";
     popped.disabled = true;
-    if (popCount == 88) {
-        alert("Congrats, you popped all the bubbles!");
+}
+
+let nums = [];
+for (let n = 1; n <= 88; n++) {
+    nums.push(n);
+}
+function randomPop() {
+    if (popCount < 88) {
+        let bubbleNum = nums[Math.floor(Math.random()*nums.length)];
+        pop(bubbleNum);
+        nums = nums.filter(num => num != bubbleNum);
     }
 }
+
+window.addEventListener("load", () => {
+    makeButtons(88);
+});
+
+window.addEventListener("keypress", (event) => {
+    if(event.key == "Enter"){
+        document.getElementById("refresh-button").click();
+    }
+    else if(event.key == ' '){
+        document.getElementById("toggle").click();
+    }
+});

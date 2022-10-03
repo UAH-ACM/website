@@ -13,17 +13,24 @@
         <link rel="icon" href="assets/pop-logo.png" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body onload="makeButtons(88)">
+    <body>
         <script src="script.js"></script>
         <h1>
             <a href="https://github.com/shorewind/pop-website" target="_blank" rel="noopener noreferrer">
                 Pop!
             </a>
+            <label class="switch">
+                <input id="toggle" type="checkbox" onclick="randomPop()">
+                <span class="slider round"></span>
+            </label>
         </h1>
         <hr width="100%"; size = "1"; color = "#E7F6F2";>
+        <div class="header">
             <p id="info"><script>typeWriter()</script></p>
+            <p id="counter">pops: 0</p>
+        </div>
             <div id="bubble-container"></div>
-            <button class="refresh-button" onclick="refresh()">Refresh &#x21bb;</button>
+            <button id="refresh-button" onclick="refresh()">Refresh &#x21bb;</button>
                 <div class="footer">
                     <button id="acm-button" onclick="redirect('https://uah.acm.org/')">Back to UAH ACM</button>
                     <a href="https://github.com/shorewind" target="_blank" rel="noopener noreferrer">
