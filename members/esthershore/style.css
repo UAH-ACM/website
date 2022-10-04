@@ -79,8 +79,9 @@ a {
     align-items: center;
 }
 
-#info, #counter {
+#info, #counter, #controls {
     margin: 1vh;
+    text-align: center;
 }
 
 button {
@@ -110,7 +111,7 @@ button {
 }
 
 #refresh-button {
-    margin: 2vh;
+    margin: 1vh;
 }
 
 #refresh-button:hover {

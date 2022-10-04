@@ -29,8 +29,14 @@ function makeButtons(num) {
     }
 }
 
+let nums = [];
+for (let n = 1; n <= 88; n++) {
+    nums.push(n);
+}
+
 let popCount = 0;
 function pop(i) {
+    nums = nums.filter(num => num != i);
     if (popCount < 88) {
         popCount++;
         document.getElementById("counter").innerHTML = "pops: " + popCount;
@@ -44,10 +50,7 @@ function pop(i) {
     popped.disabled = true;
 }
 
-let nums = [];
-for (let n = 1; n <= 88; n++) {
-    nums.push(n);
-}
+
 function randomPop() {
     if (popCount < 88) {
         let bubbleNum = nums[Math.floor(Math.random()*nums.length)];
