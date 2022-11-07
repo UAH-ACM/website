@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: rgb(84, 92, 99);
+}
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h3.title {
+    color: #131633;
+    text-transform: capitalize;
+    font-size: 32px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+hr {
+    width: 150px;
+    height: 2px;
+    background-color: #2196f3;
+    margin: 40px auto;
+}
+#stuff {
+    background: rgb(15, 15, 15);
+    color: rgb(77, 69, 69);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("http://www.nasa.gov/sites/default/files/thumbnails/image/main_image_star-forming_region_carina_nircam_final-5mb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#stuff h1, #stuff h3{
+    font-size: 28px;
+    text-shadow: 2px 2px #000;
+    
+}
+
+#stuff h1 {
+    font-size: 60px;
+}
+
+#stuff a.btn {
+    color: white;
+    background-color: rgb(3, 3, 3);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    opacity: 1;
+}
+
+#about {
+    padding: 50px;
+    margin-bottom: 0px;
+}
+
+.about-bio {
+    width: 65%;
+    max-width: 800px;
+    line-height: 2;
+    margin-left: 20px;
+    color :rgb(3, 3, 3)
+}
+#two-cols {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.footer
+{
+    background-color: #131622;
+    color: white;
+    text-align: center;
+    background: white;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#contact a.btn, #contact a.btn {
+    color: white;
+    background-color: rgb(3, 3, 3);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    opacity: 1;
+}
+
+#contact
+{
+    background: rgb(15, 15, 15);
+    color: rgb(77, 69, 69);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/main_image_deep_field_smacs0723-1280.jpg?itok=6-LM40Qf");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#contact h3 {
+    font-size: 60px;
+    color: white;
+}
+
+#contact a.btn, #contact a.btn
+{
+    padding: 15px 40px;
+}
+
+.resume
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
