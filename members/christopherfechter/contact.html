@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wordle Page</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="acm.png">
+    <script src="main.js"></script>
+    <meta charset="utf-8" />
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+
+<body>
+    <br />
+    <br />
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s3">
+                <a href="index.html" class="w3-button w3-block w3-black">HOME</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="contact.html" class="w3-button w3-block w3-black">WORDLE</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="about.html" class="w3-button w3-block w3-black">CATS</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="https://uah.acm.org/" class="w3-button w3-block w3-black">ACM</a>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <!-- Description of what we're doing -->
+    <h2>Among Us Wordle</h2>
+    <p>Guess the 5 letter word related to Among Us.</p>
+    <p>If you get it right, something cool will happen!</p>
+    <p><strong>WARNING: Sound</strong></p>
+
+    <audio id="audio1" src="confetti.mp3" volume="0.2" preload="auto"></audio>
+    <audio id="audio2" src="error.mp3" volume="0.2" preload="auto"></audio>
+
+    <input type="text" id="oneletter" name="oneletter" maxlength="1">
+    <input type="text" id="twoletter" name="twoletter" maxlength="1">
+    <input type="text" id="threeletter" name="threeletter" maxlength="1">
+    <input type="text" id="fourletter" name="fourletter" maxlength="1">
+    <input type="text" id="fiveletter" name="fiveletter" maxlength="1">
+    <input type="submit" value="Submit" onclick="validate()">
+
+
+    <script>
+        document.getElementById("oneletter").setAttribute('size', 1);
+        document.getElementById("twoletter").setAttribute('size', 1);
+        document.getElementById("threeletter").setAttribute('size', 1);
+        document.getElementById("fourletter").setAttribute('size', 1);
+        document.getElementById("fiveletter").setAttribute('size', 1);
+    </script>
+    <br />
+    <br />
+    <p><small>The answer is at the bottom if you can't guess it.</small></p>
+    <br />
+    <hr />
+
+    <h1>Information about Among Us</h1>
+    <p>In case you don't know...</p>
+
+    <p><strong>Among Us</strong> is an online multiplayer social deduction game.</p>
+    <h4>Here's the trailer:</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NSJ4cESNQfE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br />
+    <br />
+
+    <p>There are <strong>12</strong> colors in total to choose from.</p>
+    <!-- Dropdown -->
+    <label for="sideOpt">Options: </label>
+    <select name="sideOpt">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="orange">Orange</option>
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="rose">Rose</option>
+        <option value="cyan">Cyan</option>
+        <option value="pink">Pink</option>
+        <option value="purple">Purple</option>
+        <option value="banana">Banana</option>
+        <option value="coral">Coral</option>
+        <option value="lime">Lime</option>
+        <option value="gray">Gray</option>
+        <option value="maroon">Maroon</option>
+        <option value="brown">Brown</option>
+        <option value="tan">Tan</option>
+    </select>
+    <br>
+    <br />
+    <p>There are <strong>7</strong> possible roles to choose from. </p>
+    <form>
+        <input type="radio" id="crewmate" name="roles" value="Crewmate">
+        <label style="color:blue" for="Crewmate">Crewmate</label><br>
+        <input type="radio" id="imposter" name="roles" value="Imposter">
+        <label style="color:red" for="Imposter">Imposter</label><br>
+        <input type="radio" id="scientist" name="roles" value="Scientist">
+        <label style="color:green" for="Scientist">Scientist</label><br />
+        <input type="radio" id="shapeshifter" name="roles" value="Shapeshifter">
+        <label style="color:darkred" for="Shapeshifter">Shapeshifter</label><br />
+        <input type="radio" id="engineer" name="roles" value="Engineer">
+        <label style="color:orange" for="Engineer">Engineer</label><br />
+        <input type="radio" id="guardian angel" name="roles" value="Guardian Angel">
+        <label style="color:lightblue" for="Guardian Angel">Guardian Angel</label><br />
+        <input type="radio" id="ghost" name="roles" value="Ghost">
+        <label style="color:gray" for="Ghost">Ghost</label>
+    </form>
+    <p>You can drag this crewmate back and forth.</p>
+
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="amongUsMate.png" draggable="true" ondragstart="drag(event)" id="drag1" width="250" height="250">
+    </div>
+
+    <br />
+
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    <br />
+    <p><small><strike>The answer for the wordle is: SUSSY</strike></small></p>
+    <br />
+    <br />
+    <button class="button" onclick="location.href = 'https://uah.acm.org/';">Back to ACM</button>
+    <br />
+    <br />
+</body>
+</html>
