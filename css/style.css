@@ -342,11 +342,22 @@
         border-radius: 20px;
         border: 8px solid #000000;
     }
+
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
     .banner a:hover {
         opacity: 0.7;
     }
     
+    .banner-title {
+        position: absolute;
+        color: #ffffff;
+    }
+
     .banner2 a:hover {
         opacity: 0.7;
     }
