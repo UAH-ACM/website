@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="description" content="Enjoy some digital bubble wrap!">
+        <meta property="og:title" content="Pop!"/>
+        <meta property="og:description" content="Enjoy some digital bubble wrap!">
+        <meta property="og:image" content="https://i.imgur.com/hFZwzay.png">  
+
+        <title>Pop!</title>
+        <link rel="icon" href="assets/pop-logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <h1>
+            <a href="https://github.com/shorewind/website" target="_blank" rel="noopener noreferrer">
+                Pop!
+            </a>
+            <label class="switch">
+                <input id="toggle" type="checkbox" onclick="randomPop()">
+                <span class="slider round"></span>
+            </label>
+        </h1>
+        <hr width="100%"; size = "1"; color = "#E7F6F2";>
+        <div class="header">
+            <p id="info"><script>typeWriter()</script></p>
+            <p id="counter">pops: 0</p>
+        </div>
+            <div id="bubble-container"></div>
+            <p id="controls">press SPACE or toggle to pop a random bubble<br> press ENTER to refresh page</p>
+            <button id="refresh-button" onclick="refresh()">Refresh &#x21bb;</button>
+                <div class="footer">
+                    <button id="acm-button" onclick="redirect('https://uah.acm.org/')">Back to UAH ACM</button>
+                    <a href="https://github.com/shorewind" target="_blank" rel="noopener noreferrer">
+                        <img id="github" src="assets/github-icon.png" alt="github icon">
+                    </a>
+                    <p>
+                        <i>Created October 2022</i>
+                    </p>
+                </div>
+    </body>
+</html>

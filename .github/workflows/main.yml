@@ -24,8 +24,8 @@ jobs:
     # https://github.community/t/self-hosted-runner-with-github-runner-as-backup-when-offline/17504/10
     #
     # If for some reason all runners seem to be offline, update the line to this:
-    # runs-on: ubuntu-latest
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
+    # runs-on: self-hosted
     steps:
     # Pull latest code from GitHub
     - name: Get latest code

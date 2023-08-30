@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page
+  ––––––––––––––––––––––––––––––––––––––––––––––––––-------------------------->
+    <meta charset="utf-8">
+    <title>UAH ACM</title>
+    <meta name="description" content="UAH ACM Student Chapter">
+    <meta name="author" content="Joshua Estes">
+
+    <!-- Mobile Specific Metas
+  ––––––––––––––––––––––––––––––––––––––––––––––––––-------------------------->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––----------------->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:800" rel="stylesheet" type="text/css">
+
+    <!-- CSS ––––––––––––––––––––––––––––––––––––––––––––––––––------------------------->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar-redesign.css">
+
+    <script type="text/javascript" src=".\scripts\resize-functions.js"></script>
+
+    <!-- Favicon ––––––––––––––––––––––––––––––––––––––––––––––––––--------------------->
+    <link rel="icon" type="image/png" href="images/acm_logo.png">
+
+</head>
+
+<body>
+    <header>
+        <div class="container-404">
+            <div class="acm-logo">
+                <a><img scale src="images/acm_logo_wide_resize.png" style="position: relative" alt="UAH ACM"/></a>
+                <!-- <a><img height="30px" src="images/logobanner-resized.png" style="position:relative"></a> -->
+            </div>
+            <div class="options">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About</a>
+                <a href="contactus.html">Contact</a>
+                <a href="events.html">Events</a>
+                <a href="membership.html">Membership</a>
+                <a href="projects.html">Projects</a>
+            </div>
+        </div>
+    </header>
+
+    <!--Content------------------------------------------------------>
+    <!--Three Tiles-->
+    <div class="container main">
+        <h1>Events</h1>
+        
+        <div class="row">
+            <div class="twelve columns">
+                <div style="font-size: large">
+                    <h1>Charger Connect</h1>
+                </div>
+                <div style="font-size: large; display: flex; justify-content: center;">
+                    <p>See all of our upcoming events on our Charger Connect page!</p>
+                </div>
+                <a class="button button-primary" href="https://uah.campuslabs.com/engage/organization/acm">EVENTS</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="twelve columns">
+                <div style="font-size: large">
+                    <h1>Google Calendar</h1>
+                </div>
+                <div class="row">
+                    <div style="display: flex; justify-content: center;">
+                        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23039BE5&ctz=America%2FChicago&showTitle=1&showNav=1&showPrint=0&showCalendars=0&src=YWNtQHVhaC5lZHU&color=%23039BE5" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                </div>
+                <div style="font-size: large; display: flex; justify-content: center;">
+                    <p>You can subscribe to our Google Calendar so you'll automatically see what meetings and events we've got planned! Just follow these steps to subscribe to the calendar:</p>
+                </div>
+                <div style="font-size: large;">
+                    <ul style="list-style-type: square;">
+                        <li>On Google Calendar, look for the "Other Calendars" section in the bottom of the left menu.</li>
+                        <img src="images/CalendarInstructions/add-calendar.png" width="30%" alt="Calendar Instructions" />
+                        <li>Click the plus button, then select the "Subscribe to Calendar" option.</li>
+                        <img src="images/CalendarInstructions/subscribe-calendar.png" width="30%" alt="Calendar Instructions" />
+                        <li>In the text box, enter "acm@uah.edu" to search for our ACM calendar.</li>
+                        <img src="images/CalendarInstructions/input-email.png" width="30%" alt="Calendar Instructions" />
+                        <li>Once you've added our calendar, you can rename it or change the calendar color!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div id="bar">
+            <div class="row" id="desktop">
+                <div class="four columns">
+                    <div class="left">
+                        <div class="leftimage">
+                            <a href="https://www.acm.org"><img src="images/acm-logo-transparent.png" width="100%"
+                                    alt="Association for Computing Machinery" style="position: relative;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns" style="font-size: medium">
+                    <div class="left">
+                        <div class="rightimage">
+                            <a href="index.html">Home</a>
+                            <h1></h1>
+                            <a href="aboutus.html">About</a>
+                            <h1></h1>
+                            <a href="membership.html">Membership</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns" style="font-size: medium">
+                    <div class="right">
+                        <div class="rightimage">
+                            <a href="projects.html">Projects</a>
+                            <h1></h1>
+                            <a href="contactus.html">Contact</a>
+                            <h1></h1>
+                            <a href="membersites.html">One Month Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        driverCode();
+        window.onresize = driverCode;
+    </script>
+</body>
+
+</html>

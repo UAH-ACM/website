@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wordle Page</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="bingus1.jpg">
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+
+<body>
+    <br />
+    <br />
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s3">
+                <a href="index.html" class="w3-button w3-block w3-black">HOME</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="contact.html" class="w3-button w3-block w3-black">WORDLE</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="about.html" class="w3-button w3-block w3-black">CATS</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="https://uah.acm.org/" class="w3-button w3-block w3-black">ACM</a>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <!-- Description of what we're doing -->
+    <h2>Among Us Wordle</h2>
+    <p>Guess the 5 letter word related to Among Us.</p>
+    <p>If you get it right, something cool will happen!</p>
+    <p><strong>DISCLAIMER: Nothing happens right now.</strong></p>
+
+    <form>
+        <label for="fname">Guess the Wordle:</label><br>
+        <input type="text" id="1letter" name="1letter" maxlength="1">
+        <input type="text" id="2letter" name="2letter" maxlength="1">
+        <input type="text" id="3letter" name="3letter" maxlength="1">
+        <input type="text" id="4letter" name="4letter" maxlength="1">
+        <input type="text" id="5letter" name="5letter" maxlength="1">
+        <input type="submit" value="Send">
+    </form>
+
+    <script>
+        document.getElementById("1letter").setAttribute('size', 1);
+        document.getElementById("2letter").setAttribute('size', 1);
+        document.getElementById("3letter").setAttribute('size', 1);
+        document.getElementById("4letter").setAttribute('size', 1);
+        document.getElementById("5letter").setAttribute('size', 1);
+    </script>
+    <br />
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <h1>Information about Among Us</h1>
+    <p>In case you don't know...</p>
+
+    <p><strong>Among Us</strong> is an online multiplayer social deduction game.</p>
+    <h4>Here's the trailer:</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NSJ4cESNQfE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br />
+    <br />
+
+    <!-- Dropdown -->
+    <label for="sideOpt">Crewmate Colors: </label>
+    <select name="sideOpt">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="orange">Orange</option>
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="rose">Rose</option>
+        <option value="cyan">Cyan</option>
+        <option value="pink">Pink</option>
+        <option value="purple">Purple</option>
+        <option value="banana">Banana</option>
+        <option value="coral">Coral</option>
+        <option value="lime">Lime</option>
+        <option value="gray">Gray</option>
+        <option value="maroon">Maroon</option>
+        <option value="brown">Brown</option>
+        <option value="tan">Tan</option>
+    </select>
+    <br>
+    <br />
+
+    <!-- Text -->
+    <label for="name">Name: </label>
+    <input type="text" value="" name="name" />
+    <br>
+    <br />
+
+    <!-- Color Picker -->
+    <label for="colorPicker">Color: </label>
+    <input type="color" name="colorPicker" />
+    <br>
+
+
+    <p>You can drag this crewmate back and forth.</p>
+
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="bannerA.jfif" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+    </div>
+
+    <br />
+
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
+    <br />
+    <br />
+    <button class="button" onclick="location.href = 'https://uah.acm.org/';">Back to ACM</button>
+    <br />
+    <br />
+</body>
+</html>

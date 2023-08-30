@@ -1,0 +1,157 @@
+* {
+    font-family: "Source Code Pro", monospace;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #E7F6F2;
+    background: #1C2121;
+}
+
+.switch {
+    position: absolute;
+    right: 5vh;
+    display: inline-block;
+    align-items: center;
+    width: 6vh;
+    height: 3vh;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #A5C9CA;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    font-size: 10pt;
+    height: 2.4vh;
+    width: 2.4vh;
+    left: 0.3vh;
+    bottom: 0.3vh;
+    background-color: #395B64;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #A5C9CA;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(3vh);
+    -ms-transform: translateX(3vh);
+    transform: translateX(3vh);
+}
+
+.slider.round {
+    border-radius: 10vh;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: #E7F6F2;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info, #counter, #controls {
+    margin: 1vh;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    margin: 0.15vh;
+}
+
+#bubble-container {
+    text-align: center;
+    width: 45vh;
+}
+
+.bubble-button {
+    font-size: 1.5vh;
+    border-radius: 0.4vh;
+    background: #395B64;
+    width: 5vh;
+    height: 3vh;
+    color: #395B64;
+    user-select: none;
+}
+
+.bubble-button:hover {
+    background: #426974;
+    color: #426974;
+}
+
+#refresh-button {
+    margin: 1vh;
+}
+
+#refresh-button:hover {
+    opacity: 90%;
+}
+
+#refresh-button:active {
+    opacity: 75%;
+}
+
+#acm-button {
+    border-radius: 0.8vh;
+    background: #A5C9CA;
+    width: 14vh;
+    min-width: 8rem;
+    height: 4vh;
+    min-height: 2rem;
+    margin: 1vh;
+    text-align: center;
+}
+
+#acm-button:hover {
+    background-color: #AFD5D6;
+}
+
+#acm-button:active {
+    opacity: 75%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    bottom: 1vh;
+    align-items: center;
+}
+
+#github {
+    cursor: pointer;
+    height: 5vh;
+    padding: 2vh;
+}
