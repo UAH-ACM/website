@@ -1,13 +1,21 @@
-body {
-    background: olive;
-    padding: 5vh;
+* {
     box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: darkred;
+    height: 100vh;
+    border: 5vh solid olive;
 }
 
 .test {
-    background: darkred;
+    background: black;
     color: aqua;
-    text-align: center;
-    box-sizing: inherit;
-    height: 100vh;
 }
+
