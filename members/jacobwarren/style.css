@@ -1,3 +1,13 @@
 body {
-    background-color:olive;
+    background: olive;
+    padding: 5vh;
+    box-sizing: border-box;
+}
+
+.test {
+    background: darkred;
+    color: aqua;
+    text-align: center;
+    box-sizing: inherit;
+    height: 100vh;
 }
