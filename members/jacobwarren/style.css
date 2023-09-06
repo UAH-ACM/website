@@ -14,8 +14,9 @@ body {
     border: 4vh solid olive;
 }
 
-.test {
+.link {
     background: black;
     color: aqua;
+    text-decoration: none;
 }
 
