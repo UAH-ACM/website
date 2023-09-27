@@ -1,5 +1,22 @@
 #sky {
   background-color: #ffffff;
+  padding-top: 5em;
+}
+
+.buoy{
+  animation: move-up-down 7s cubic-bezier(.55,.5,.45,.5)     infinite; 
+}
+/*Moves the buoy up and down independent of the waves */
+@keyframes move-up-down {
+  0% {
+   transform: translate3d(0,0vh,0);
+  }
+  50% { 
+    transform: translate3d(0,-25%,0);
+  }
+  100% {
+    transform: translate3d(0,0vh,0);
+   }
 }
 
 .waves {
@@ -13,9 +30,9 @@
 
   /* Animation */
 
-.parallax > use {
-    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
-  }
+  .parallax > use {
+      animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+    }
   .parallax > use:nth-child(1) {
     animation-delay: -2s;
     animation-duration: 7s;
