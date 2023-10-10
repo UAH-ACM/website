@@ -8,6 +8,7 @@ let timeoutActive = false;
 let timesFailed = 0;
 let timesPressed = 0;
 let id = 0;
+let keyDown = false;
 
 function StopTimeouts(allTimeouts) 
 {
@@ -184,8 +185,10 @@ function Jump(tempMargin, index)
 
 window.addEventListener("keydown", (event) => 
 {
-    if (event.key == event.shiftKey) 
+    if (event.key == event.shiftKey && keydown == false) 
     {
+        keydown = true;
+
         let elementRules = document.styleSheets[0].cssRules;
         let tempMargin = elementRules[0].style.top;  
         
@@ -220,5 +223,11 @@ window.addEventListener("keydown", (event) =>
                 timesPressed = 0;
             }, 3000);
         }
+   
     }
+});
+
+window.addEventListener("keyup", (event) => 
+{
+    keydown = false;
 });
