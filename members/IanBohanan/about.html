@@ -9,20 +9,15 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
         <script src="functions.js"></script>
-        <script src="components/header.js" type="text/javascript" defer></script>
     </head>
 
 <body class="main-container">
-
-    
-
     <!--Waves Container-->
     <!--From https://codepen.io/goodkatz/pen/LYPGxQz-->
     <div id="sky">
-        <!-- All the buoys in the header.js file-->
-        <svg class="overlay waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        <img src="./assets/buoy.svg" height="100px" class="overlay buoy"/>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-            
             <defs>
                 <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
             </defs>
@@ -33,23 +28,8 @@
                 <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(48, 178, 206, 0.72)" />
             </g>
         </svg>
-
-        <div class="flex-container buoy">
-            <div>
-                <div class = "rectangle"> 
-                    <a href="index.html">HOME</a> 
-                </div>
-                <img src="./assets/buoy.svg" height="100px"/>
-            </div>
-            <div>
-                <div class = "rectangle"> 
-                    <a href="about.html">ABOUT</a> 
-                </div>
-                <img src="./assets/buoy.svg" height="100px"/>
-            </div>
-        </div>
     </div>
     <!--Waves end-->
-    Main Page
+    ABOUT page.
 </body>
 </html>

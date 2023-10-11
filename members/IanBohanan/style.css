@@ -5,5 +5,12 @@
 
 .overlay {
     position: absolute;
-    
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-between;
+    border: 1px solid black;
   }
