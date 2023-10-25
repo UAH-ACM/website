@@ -35,7 +35,7 @@ class Header extends HTMLElement {
             </div>
             <div>
                 <div class = "rectangle"> 
-                    <a href="about.html">Back to ACM</a> 
+                    <a href="https://uah.acm.org/">Back to ACM</a> 
                 </div>
                 <img src="./assets/buoy.svg" height="100px"/>
             </div>
