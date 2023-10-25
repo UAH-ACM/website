@@ -5,8 +5,8 @@
 
 /*Basic rectangle */
 .rectangle {
-  height: 50px;
-  width: 100px;
+  height: 8vh;
+  width: 8vw;
   border: 10px solid #000000;
   background-color: #f7f7f7;
 }

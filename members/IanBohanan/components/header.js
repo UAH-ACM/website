@@ -33,6 +33,12 @@ class Header extends HTMLElement {
                 </div>
                 <img src="./assets/buoy.svg" height="100px"/>
             </div>
+            <div>
+                <div class = "rectangle"> 
+                    <a href="about.html">Back to ACM</a> 
+                </div>
+                <img src="./assets/buoy.svg" height="100px"/>
+            </div>
         </div>
     </div>
         `;
