@@ -1,0 +1,14 @@
+.main-container {
+    background-color: rgba(48, 178, 206, 1);
+    color: black;
+}
+
+.overlay {
+    position: absolute;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
