@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: darkred;
+    height: 100vh;
+    border: 4vh solid olive;
+}
+
+.link {
+    color:cadetblue;
+    text-decoration: none;
+}
+

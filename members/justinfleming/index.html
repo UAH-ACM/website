@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <style>
+            .word 
+            {
+                position:absolute; 
+                top:200px; 
+                vertical-align:top; 
+                white-space:nowrap;
+            }
+            .Levels 
+            {
+                position:absolute; 
+                vertical-align:top; 
+                white-space:nowrap;
+            }
+            .Levels .Level1
+            {
+                top:0px; 
+                left:2000px; 
+            }
+            .Levels .Level2
+            {
+                top:0px; 
+                left:2000px; 
+            }
+            .obstacle
+            {
+                position:absolute; 
+                vertical-align:top; 
+                top:200px; 
+                left:2000px;
+                white-space:nowrap
+            }
+            .death
+            {
+                position:absolute; 
+                vertical-align:top; 
+                top:100px; 
+                left:2000px; 
+                writing-mode: vertical-rl
+            }
+            .Controls
+            {
+                text-align: center;
+                position:relative;
+                vertical-align:top;
+            }
+            .Hint
+            {
+                text-align: center;
+                position:relative;
+                vertical-align:top;
+                left:2000px;
+            }
+        </style>
+    </head>
+    <body>
+        <script src = "script.js">
+        </script>
+        <h1>
+            <div class = "word">
+                Player
+            </div>
+            <div class = "Controls">
+                Press Space To Play
+            </div>
+            <div class = "Hint">
+                Try Spamming Space To Get Higher
+            </div>
+        </h1>
+        <h2>
+            <div class = "Levels"> 
+                <div class = "Levels Level1">
+                    Level 1
+                </div>
+                <div class = "Levels Level2">
+                    You Won! No more levels.
+                </div>
+            </div>
+        </h2>
+        <h3>
+            <div class = "obstacle">
+                OBSTACLE
+            </div>
+            <div class = "death">
+                WALL OF NO ESCAPE
+            </div>
+        </h3>
+        <h6>
+            <a href="https://uah.acm.org/" style = "position:absolute; top:10px; left:10px">Back to ACM</a>
+        </h6>
+    </body>
+</html>
