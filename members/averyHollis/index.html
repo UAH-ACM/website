@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Additional Credit to Bailee Segars for reference css code -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Avery's Portfolio</title>
+        <link rel="stylesheet" href="css/index.css"/>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Avery Hollis</h1>
+            <p>UAH Computer Science - Entertainment Computing, Game Design Minor</p>
+            <nav>
+                <a href="#about">About | </a>
+                <a href="#projects">Projects | </a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+        </header>
+
+        <div>
+            <p>(Pretend to) Buy me a coffee by clicking the icon!)</p>
+            <img width="256" height="256" onclick="incrementCoffee()" src="assets/coffee-cup.png"/>
+            <p id="coffeeCounter">Coffees so far: 0</p> <!-- Javascript connects to this -->
+            <a href="https://www.flaticon.com/free-icons/food" title="food icons">Coffee icon created by Freepik - Flaticon</a>
+        </div>
+
+        <main>
+            <!-- About Section -->
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    I'm Avery. I'm currently studying Computer Science at The University 
+                    of Alabama in Huntsville. Honestly this little site is a major WIP, I may update it later and add a lot more info about the projects I've worked on inside and outside of UAH. Also, info copied from my resume.
+                </p>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li>Portfolio Website</li>
+                    <li>Toki-Toki Island</li>
+                    <li>A Dragon's Hoard</li>
+                    <li>3D Biped rig</li>
+                    <li>Solar2D Puzzle Platformer</li>
+                    <li>Witchy Magic Platformer Unity Game</li>
+                    <li>And more!</li>
+                </ul>
+            </section>
+
+            
+        </main>
+        <hr style="width: 100%"/>
+        <div id="footwrap" class="footer">
+            
+            <!-- Contact Section -->
+            <section id="contact">
+            <div class="container">
+                <div class="row">
+                
+                    <div class="col-lg-3">
+                        <p><sm>Profile on Other Sites</sm></p>
+                        <p>
+                            <a href="https://www.linkedin.com/in/avery-hollis/">LinkedIn <i class="icon-linkedin"></i></a>
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p><t>Email</t><br/>
+                            <a href="mailto:adh0065@uah.edu" class="mail">adh0065@uah.edu</a> <br/>
+                        </p>
+                        <p><t>Address</t><br/>
+                            Avery Hollis<br/>
+                            601 John Wright Dr. NW, Suite CVA-544<br/>
+                            Huntsville, AL 35899, USA<br/>
+                        </p>
+                        <p><t>Phone</t><br/>
+                            <a href="tel:0001112222" class="tel">(000)111-2222</a> <br/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </div>
+        <footer>
+            <p>&copy; 2025 Avery Hollis</p>
+        </footer>
+    </body>
+    
+    <img alt="A cute cat" width="384" height="256" src="https://media.istockphoto.com/id/1345942562/photo/kitten-british-cat-looking-at-camera.jpg?s=612x612&w=0&k=20&c=Jj4TuPuCVad_7UaLTS-FaRCXRvdmMGwlqEdM96ikebI="/>
+</html>
